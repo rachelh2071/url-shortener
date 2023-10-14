@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of URLs</title>
+</head>
+<body>
+    <h1>List of URLs</h1>
+    <ul>
+        {% for url in urls %}
+            <li>
+                Original URL: <a href="{{ url.longUrl }}" target="_blank">{{ url.longUrl }}</a><br>
+                Shortened URL: <a href="{{ url.shortUrl }}" target="_blank">{{ url.shortUrl }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

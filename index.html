@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form id="url-form">
+        <input type="text" id="long-url" placeholder="Enter the long URL">
+        <button type="button" id="shorten-button">Shorten</button>
+    </form>
+    <div id="shortened-url">
+        Shortened URL: <a id="short-url" target="_blank"></a>
+    </div>
+    <div id="error-message" class="hidden">
+        Error: <span id="error-text"></span>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
